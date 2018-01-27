@@ -83,6 +83,8 @@ define([
             let map = {};
 
             this.ctx.canvas.addEventListener("keypress", function (e) {
+                if (String.fromCharCode(e.which) === ' ') that.space = true;
+                e.preventDefault();
                 if (!that.controlKeys.hasOwnProperty(e.code)) { that.controlKeys[e.code] = {"active": true}; }
                 if (that.controlKeys[e.code].active == false) { that.controlKeys[e.code].active = true; }
                 // console.log(`${e.code} is ${that.controls[e.code].active}`);

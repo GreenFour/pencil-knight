@@ -38,7 +38,7 @@ define([
         // gameEngine.addEntity(gameboard);
         // console.log(hero);
         //(game, x, y, img=null, ctx=null, scale=3, spriteWidth=50, spriteHeight=50)
-        gameEngine.addEntity(new Entity.Hero(gameEngine, 200, 400, 
+        gameEngine.addEntity(new Entity.Hero(gameEngine, 200, 500, 
             ASSET_MANAGER.getAsset("img/ZXe.png"), 
             ctx));
      
